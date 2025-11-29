@@ -1,6 +1,7 @@
 # Top 15 questions from chatgpt on 2025-11-28
 
 1 76 Minimum Window Substring
+
 2 3 Longest Substring Without Repeating Characters
 3 200 Number of Islands
 4 207 Course Schedule
