@@ -23,3 +23,9 @@ I group strings by a character frequency signature.
 For each word, I count how many times each letter appears and convert that count into a tuple, which becomes the dictionary key.  
 All anagrams share the same frequency tuple, so they end up in the same group.  
 This runs in O(n·k) time and avoids sorting.  
+
+## 
+I use two pointers at both ends.  
+The area is width times the shorter height.   
+At each step, I compute the area, then move the pointer with the smaller height, because the shorter line limits the area.   
+Moving the taller one cannot help. This gives an O(n) solution.  
