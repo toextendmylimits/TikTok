@@ -51,7 +51,15 @@ When adding a new element, I remove smaller elements from the back since they ca
 The front of the deque always holds the max of the current window.  
 Each element is added and removed once, so it’s O(n).  
 
+# Stack
+## 739. Daily Temperatures
+I use a monotonic decreasing stack storing indices.  
+As I scan days, if today’s temperature is higher than the stack top, I pop and set the answer as the day difference.  
+Then I push today. Each day is processed once, so it’s O(n).  
+
+
 # Practice gain
 ## 49. Group Anagrams
 ## 424. Longest Repeating Character Replacement   
 ## 239. Sliding Window Maximum
+## 739. Daily Temperatures
