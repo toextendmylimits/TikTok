@@ -32,9 +32,8 @@ At each step, I compute the area, then move the pointer with the smaller height,
 Moving the taller one cannot help. This gives an O(n) solution.  
 
 ## 76. Minimum Window Substring
-I use a sliding window with two pointers.   
-I count required characters from t. As I expand the right pointer,   
-I track counts in the window and how many required characters are satisfied.  
+I use a sliding window with two pointers. I count required characters from t.   
+As I expand the right pointer, I track counts in the window and how many required characters are satisfied.    
 Once all are satisfied, I shrink from the left as much as possible while keeping the window valid, updating the best window each time.   
 Overall it’s linear because each pointer only moves forward.  
 
