@@ -51,6 +51,8 @@ When adding a new element, I remove smaller elements from the back since they ca
 The front of the deque always holds the max of the current window.  
 Each element is added and removed once, so it’s O(n).  
 
+## 15. 3Sum
+
 # Stack
 ## 739. Daily Temperatures
 I use a monotonic decreasing stack storing indices.  
