@@ -30,3 +30,6 @@ I use two pointers at both ends.
 The area is width times the shorter height.   
 At each step, I compute the area, then move the pointer with the smaller height, because the shorter line limits the area.   
 Moving the taller one cannot help. This gives an O(n) solution.  
+
+# Practice gain
+## 49. Group Anagrams
