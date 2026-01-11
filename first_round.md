@@ -74,6 +74,7 @@ Finally, I append the remaining intervals.
 This runs in O(n) time and O(n) space.  
 
 # Practice gain
+## 146. LRU Cache
 ## 49. Group Anagrams
 ## 424. Longest Repeating Character Replacement   
 ## 239. Sliding Window Maximum
