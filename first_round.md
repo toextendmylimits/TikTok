@@ -19,6 +19,7 @@ At each step, I update the window length.
 This runs in O(n) time.  
 
 ## 49. Group Anagrams
+Practice more.  
 I group strings by a character frequency signature.  
 For each word, I count how many times each letter appears and convert that count into a tuple, which becomes the dictionary key.  
 All anagrams share the same frequency tuple, so they end up in the same group.  
