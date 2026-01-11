@@ -80,3 +80,6 @@ This runs in O(n) time and O(n) space.
 ## 239. Sliding Window Maximum
 ## 739. Daily Temperatures
 ## 496. Next Greater Element I
+
+# Pratice
+## 827. Making A Large Island
