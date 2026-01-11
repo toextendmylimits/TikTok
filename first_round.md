@@ -62,6 +62,10 @@ I scan nums2 with a decreasing stack.
 When I see a bigger number x, I pop all smaller stack values and record their next greater as x.   
 After building this map, I answer each nums1 element by lookup, default -1.  
 
+# Intervals
+## 56. Merge Intervals
+## 57. Insert Interval
+
 # Practice gain
 ## 49. Group Anagrams
 ## 424. Longest Repeating Character Replacement   
