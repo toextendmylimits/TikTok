@@ -17,3 +17,9 @@ I track the last index of each character in a hash map.
 When I see a repeated character, I move the left pointer to one position after its previous index, using max to avoid moving backward.  
 At each step, I update the window length.  
 This runs in O(n) time.  
+
+## 49. Group Anagrams
+I group strings by a character frequency signature.  
+For each word, I count how many times each letter appears and convert that count into a tuple, which becomes the dictionary key.  
+All anagrams share the same frequency tuple, so they end up in the same group.  
+This runs in O(n·k) time and avoids sorting.  
