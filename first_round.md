@@ -25,13 +25,14 @@ For each word, I count how many times each letter appears and convert that count
 All anagrams share the same frequency tuple, so they end up in the same group.  
 This runs in O(n·k) time and avoids sorting.  
 
+# Sliding Window / two pointers
+
 ## 11. Container With Most Water
 I use two pointers at both ends.  
 The area is width times the shorter height.   
 At each step, I compute the area, then move the pointer with the smaller height, because the shorter line limits the area.   
 Moving the taller one cannot help. This gives an O(n) solution.  
 
-# Sliding Window 
 ## 76. Minimum Window Substring
 I use a sliding window with two pointers. I count required characters from t.   
 As I expand the right pointer, I track counts in the window and how many required characters are satisfied.    
@@ -44,6 +45,13 @@ I keep max_freq, the count of the most common letter in the window.
 If window_len - max_freq is more than k, I shrink from the left.  
 Otherwise the window is valid, and I update the answer with its length.  
 
+## 239. Sliding Window Maximum
+I use a monotonic decreasing deque of indices.  
+When adding a new element, I remove smaller elements from the back since they can’t be maximum anymore.  
+The front of the deque always holds the max of the current window.  
+Each element is added and removed once, so it’s O(n).  
+
 # Practice gain
 ## 49. Group Anagrams
 ## 424. Longest Repeating Character Replacement   
+## 239. Sliding Window Maximum
