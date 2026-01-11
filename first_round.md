@@ -57,9 +57,14 @@ I use a monotonic decreasing stack storing indices.
 As I scan days, if today’s temperature is higher than the stack top, I pop and set the answer as the day difference.  
 Then I push today. Each day is processed once, so it’s O(n).  
 
+## 496. Next Greater Element I
+I scan nums2 with a decreasing stack.   
+When I see a bigger number x, I pop all smaller stack values and record their next greater as x.   
+After building this map, I answer each nums1 element by lookup, default -1.  
 
 # Practice gain
 ## 49. Group Anagrams
 ## 424. Longest Repeating Character Replacement   
 ## 239. Sliding Window Maximum
 ## 739. Daily Temperatures
+## 496. Next Greater Element I
