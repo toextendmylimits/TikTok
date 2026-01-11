@@ -1,4 +1,4 @@
-# First round coding
+First round coding
 
 ## 560. Subarray Sum Equals K
 I scan the array and keep a running prefix sum.   
@@ -31,11 +31,19 @@ The area is width times the shorter height.
 At each step, I compute the area, then move the pointer with the smaller height, because the shorter line limits the area.   
 Moving the taller one cannot help. This gives an O(n) solution.  
 
+# Sliding Window 
 ## 76. Minimum Window Substring
 I use a sliding window with two pointers. I count required characters from t.   
 As I expand the right pointer, I track counts in the window and how many required characters are satisfied.    
 Once all are satisfied, I shrink from the left as much as possible while keeping the window valid, updating the best window each time.   
 Overall it’s linear because each pointer only moves forward.  
 
+## 424. Longest Repeating Character Replacement  
+I use a sliding window and count letters inside it.   
+I keep max_freq, the count of the most common letter in the window.  
+If window_len - max_freq is more than k, I shrink from the left.  
+Otherwise the window is valid, and I update the answer with its length.  
+
 # Practice gain
 ## 49. Group Anagrams
+## 424. Longest Repeating Character Replacement   
