@@ -10,3 +10,10 @@ Initialize freq[0]=1 to count subarrays starting at index 0.”
 I count frequencies, then use a min-heap of size k.  
 Each time I add an element, if the heap exceeds k, I remove the smallest frequency.  
 In the end, the heap contains the k most frequent elements.  
+
+## 3. Longest Substring Without Repeating Characters
+I use a sliding window with two pointers.
+I track the last index of each character in a hash map.
+When I see a repeated character, I move the left pointer to one position after its previous index, using max to avoid moving backward.
+At each step, I update the window length.
+This runs in O(n) time.
